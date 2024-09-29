@@ -1,9 +1,9 @@
 import { Line } from 'react-chartjs-2';
 import { Chart, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
-
+import styled from 'styled-components';
 Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
-const Graphic = ({ data }) => {
+const GraphicProfit = ({ data }) => {
   const labels = data.map((_, index) => `Mês ${index + 1}`);
   const expenses = data.map(d => d.expense);
   const income = data.map(d => d.income);
@@ -63,10 +63,13 @@ const Graphic = ({ data }) => {
   };
 
   return (
-    <>
+    <StyledComponent>
       <Line data={dataLines} options={options} />
-    </>
+    </StyledComponent>
   );
 };
+const StyledComponent = styled.div`
+  padding: 2rem;
+`;
 
-export default Graphic;
+export default GraphicProfit;

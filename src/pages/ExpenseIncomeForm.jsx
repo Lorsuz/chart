@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-const Perguntas = ({ setData }) => {
+const ExpenseIncomeForm = ({ setData }) => {
   const [expense, setExpense] = useState("");
   const [income, setIncome] = useState("");
 
@@ -54,7 +54,7 @@ const StyledComponent = styled.main`
   margin: 0 auto;
   padding: 2rem;
   width: 100dvw;
-	min-height: 80dvh;
+  min-height: 80dvh;
 
   h1 {
     color: #019192;
@@ -79,16 +79,16 @@ const StyledComponent = styled.main`
         font-size: 1.2rem;
         margin-bottom: 1rem;
         color: #019192;
-				font-weight: 600;
+        font-weight: 600;
         input {
           width: 100%;
           padding: 0.5rem;
           margin: 0.5rem 0;
           border: 1px solid #ccc;
           border-radius: 0.2rem;
-					&:focus{
-						border: 1px solid #019192;
-					}
+          &:focus {
+            border: 1px solid #019192;
+          }
         }
       }
     }
@@ -106,4 +106,4 @@ const StyledComponent = styled.main`
   }
 `;
 
-export default Perguntas;
+export default ExpenseIncomeForm;
