@@ -20,8 +20,6 @@ function App() {
                 <Link to="/">Formulário</Link>
               </li>
               <li>
-              </li>
-              <li>
                 <Link to="/shopping">Compras</Link>
               </li>
               <li>
